@@ -145,7 +145,17 @@ Product search supports optional query parameters:
 
 ## API Documentation
 
-The repository includes an `openapi.yaml` specification. With the application running, Springdoc OpenAPI can be used to view and test the API through Swagger UI:
+The repository includes two YAML files for API documentation and testing:
+
+- `openapi.yaml` contains the OpenAPI API specification.
+- The Insomnia YAML file contains the Insomnia workspace/collection with prebuilt requests for testing the API.
+
+**Insomnia is the main API testing program for this project.**  
+To test the API, import the Insomnia YAML file into Insomnia and use the included request collection to run endpoint tests, including authentication-protected routes with JWT bearer tokens.
+
+The `openapi.yaml` file can also be used to review the API structure or import the API specification into compatible tools.
+
+With the application running, Springdoc OpenAPI can also be used to view and test the API through Swagger UI:
 
 ```text
 http://localhost:8080/swagger-ui/index.html
